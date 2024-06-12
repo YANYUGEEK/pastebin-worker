@@ -2,7 +2,7 @@ name = "pb"
 compatibility_date = "2023-01-28"
 compatibility_flags = [ "nodejs_compat" ]
 
-workers_dev = false
+workers_dev = true
 main = "src/index.js"
 
 rules = [
@@ -16,7 +16,7 @@ rules = [
 [[routes]]
 # Refer to https://developers.cloudflare.com/workers/wrangler/configuration/#routes
 pattern = "pb.jiedianxielou.workers.dev"
-custom_domain = false
+custom_domain = true
 
 [[kv_namespaces]]
 binding = "PB"  # do not touch this
