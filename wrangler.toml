@@ -2,7 +2,7 @@ name = "pb"
 compatibility_date = "2023-01-28"
 compatibility_flags = [ "nodejs_compat" ]
 
-workers_dev = true
+workers_dev = false
 main = "src/index.js"
 
 rules = [
