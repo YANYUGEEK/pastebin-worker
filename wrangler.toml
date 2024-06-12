@@ -2,7 +2,7 @@ name = "pb"
 compatibility_date = "2023-01-28"
 compatibility_flags = [ "nodejs_compat" ]
 
-workers_dev = false
+workers_dev = true
 main = "src/index.js"
 
 rules = [
@@ -15,28 +15,28 @@ rules = [
 
 [[routes]]
 # Refer to https://developers.cloudflare.com/workers/wrangler/configuration/#routes
-pattern = "shz.al"
-custom_domain = true
+pattern = "pb.jiedianxielou.workers.dev"
+custom_domain = false
 
 [[kv_namespaces]]
 binding = "PB"  # do not touch this
-id = "cc398e983a234aa19de5ea6af571a483"  # id of your KV namespace
+id = "1c0390a1481d49cbb046e4422096cdce"  # id of your KV namespace
 
 [vars]
 # must be consistent with your routes
-BASE_URL = "https://shz.al"
+BASE_URL = "https://pb.jiedianxielou.workers.dev"
 
 # url to repo, displayed in index page
-REPO = "https://github.com/SharzyL/pastebin-worker"
+REPO = "https://ys.mihoyo.com/main"
 
 # url to favicon
-FAVICON = "https://sharzy.in/favicon-32x32.png"
+FAVICON = "https://ys.mihoyo.com/main/favicon.ico"
 
 # the name displayed in TOS
-TOS_MAINTAINER = "Sharzy"
+TOS_MAINTAINER = "Genshin"
 
 # the email displayed in TOS
-TOS_MAIL = "pb@shz.al"
+TOS_MAIL = "xudong.zhong@mihoyo.com"
 
 # Cache-Control max-age for static pages
 CACHE_STATIC_PAGE_AGE = 7200
