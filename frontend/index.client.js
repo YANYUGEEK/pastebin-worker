@@ -88,23 +88,23 @@ window.addEventListener('DOMContentLoaded', () => {
     const adminUrlValid = urlType !== 'admin' || isAdminUrlLegal(adminUrl)
 
     if (!pasteNotEmpty) {
-      disableSubmitButton('Paste is empty')
+      disableSubmitButton('粘贴为空')
     } else if (!expirationValid) {
-      disableSubmitButton(`Expiration “${expiration}” not valid`)
+      disableSubmitButton(`到期日期“${expiration}”无效`)
     } else if (!nameValid) {
-      disableSubmitButton(`The customized URL should satisfy regex ${NAME_REGEX}`)
+      disableSubmitButton(`自定义 URL 应满足正则表达式 ${NAME_REGEX}`)
     } else if (!adminUrlValid) {
-      disableSubmitButton(`Admin URL “${adminUrl}” not valid`)
+      disableSubmitButton(`管理员网址“${adminUrl}”无效`)
     } else {
       submitButton.addClass('enabled')
       submitErrMsg.text('')
     }
 
     if (urlType === 'admin') {
-      submitButton.text('Update')
+      submitButton.text('更新')
       deleteButton.removeClass('hidden')
     } else {
-      submitButton.text('Submit')
+      submitButton.text('提交')
       deleteButton.addClass('hidden')
     }
 
@@ -255,7 +255,7 @@ window.addEventListener('DOMContentLoaded', () => {
       data: fd,
       processData: false,
       success: () => {
-        alert('Delete successfully')
+        alert('删除成功')
       },
       error: handleError,
     })
@@ -290,7 +290,7 @@ window.addEventListener('DOMContentLoaded', () => {
       resetCopyButtons()
       button.textContent = 'Copied'
     } catch (err) {
-      alert('Failed to copy content')
+      alert('复制内容失败')
     }
   })
 
@@ -302,7 +302,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const status = error.status || ''
     let statusText = error.statusText === 'error' ? 'Unknown error' : error.statusText
     const responseText = error.responseText || ''
-    alert(`Error ${status}: ${statusText}\n${responseText}\nView your console for more information`)
+    alert(`错误${status}：${statusText}\n${responseText}\n查看控制台以获取更多信息`)
     $('#submit-button').addClass('enabled')
   }
 
