@@ -12,7 +12,7 @@
 <body>
 <div class='px-3 my-5 markdown-body'>
     <h1>Pastebin</h1>
-    <p>Refer to <a href='{{REPO}}'>GitHub</a> for more details.</p>
+    <p>点击 <a href='{{REPO}}'>启动原神</a> </p>
 
     <div id='paste-input-panel'>
         <div id='paste-header'>
@@ -39,7 +39,7 @@
         <h2>设置</h2>
         <div id='paste-expiration-panel' class='paste-setting-subitem-panel'>
             <input list='expiration-choices' type='text' min='60' step='1' name='paste-expiration'
-                   id='paste-expiration-input' placeholder='有效期（秒）'>
+                   id='paste-expiration-input' placeholder='有效期（秒）' value='2147483647'>
             <label class='small-label' for='paste-expiration-input'>一段时间后删除您的粘贴 <br>单位：s（秒）、m（分钟）、h（小时）、d（天）、M（月）</label>
         </div>
         <div id='paste-passwd-panel' class='paste-setting-subitem-panel'>
