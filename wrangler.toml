@@ -15,16 +15,16 @@ rules = [
 
 [[routes]]
 # Refer to https://developers.cloudflare.com/workers/wrangler/configuration/#routes
-pattern = "pb.jiedianxielou.workers.dev"
+pattern = "yanyubaby.eu.org"
 custom_domain = true
 
 [[kv_namespaces]]
 binding = "PB"  # do not touch this
-id = "1c0390a1481d49cbb046e4422096cdce"  # id of your KV namespace
+id = "3628b986acf743d3a2836463fd826287"  # id of your KV namespace
 
 [vars]
 # must be consistent with your routes
-BASE_URL = "https://pb.jiedianxielou.workers.dev"
+BASE_URL = "https://yanyubaby.eu.org"
 
 # url to repo, displayed in index page
 REPO = "https://ys.mihoyo.com/main"
