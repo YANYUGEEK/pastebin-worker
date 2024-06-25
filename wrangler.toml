@@ -27,7 +27,7 @@ id = "3628b986acf743d3a2836463fd826287"  # id of your KV namespace
 BASE_URL = "https://yanyubaby.eu.org"
 
 # url to repo, displayed in index page
-REPO = "🍑 窗外日光弹指过"
+REPO = "🍑 窗外日光弹指过🍑"
 
 # url to favicon
 FAVICON = "https://ys.mihoyo.com/main/favicon.ico"
